@@ -8,7 +8,14 @@
     --gray-800: #202024;
     --gray-900: #121214;
 
-    --purple-500: #B174ED;
+    --purple-300: #c797f8;
+    --purple-400: #a571da;
+    --purple-500: #985ed3;
+}
+
+:focus {
+    outline: transparent;
+    box-shadow: 0 0 0 2px var(--purple-500);
 }
 
 * {
@@ -23,7 +30,10 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-body, input, textarea, button {
+body,
+input,
+textarea,
+button {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 1rem;

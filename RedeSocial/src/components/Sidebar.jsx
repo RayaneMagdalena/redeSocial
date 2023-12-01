@@ -15,8 +15,8 @@ export function Sidebar() {
         className={styles.avatar}
         src="https://github.com/RayaneMagdalena.png" />
        
-        <strong>Luana Vasconselos</strong>
-        <span>illustrator</span>
+        <strong>Rayane Magdalena</strong>
+        <span>Web Developer</span>
       </div>
 
       <footer>
