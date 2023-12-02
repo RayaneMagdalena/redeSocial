@@ -1,43 +1,43 @@
 .post {
-background-color: var(--gray-800);
-border-radius: 8px;
-padding: 2.5rem;
+    background-color: var(--gray-800);
+    border-radius: 8px;
+    padding: 2.5rem;
 }
 
-.post + .post {
-margin-top: 2rem;
+.post+.post {
+    margin-top: 2rem;
 }
 
 /* Header */
-.post > header {
-display: flex;
-align-items: center;
-justify-content: space-between;
+.post>header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.post > header time {
-font-size: 0.8rem;
-color: var(--gray-400);
+.post>header time {
+    font-size: 0.8rem;
+    color: var(--gray-400);
 }
 
 .author {
-display: flex;
-align-items: center;
-gap: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
-.authorInfo strong { 
-display: block;
-color: var(--gray-100);
-line-height: 1.6;
+.authorInfo strong {
+    display: block;
+    color: var(--gray-100);
+    line-height: 1.6;
 }
 
-.authorInfo span { 
+.authorInfo span {
     display: block;
     font-size: 0.8rem;
     color: var(--gray-400);
     line-height: 1.6;
-    }
+}
 
 .avatar {
     width: 3rem;
@@ -51,9 +51,9 @@ line-height: 1.6;
 
 /* Content */
 .content {
-line-height: 1.6;
-color: var(--gray-300);
-margin-top: 1.5rem;
+    line-height: 1.6;
+    color: var(--gray-300);
+    margin-top: 1.5rem;
 }
 
 .content p {
@@ -61,9 +61,9 @@ margin-top: 1.5rem;
 }
 
 .content a {
-font-weight: bold;
-color: var(--purple-500);
-text-decoration: none;
+    font-weight: bold;
+    color: var(--purple-500);
+    text-decoration: none;
 }
 
 .content a:hover {
@@ -78,7 +78,7 @@ text-decoration: none;
     border-top: 1px solid var(--gray-600);
 }
 
-.commentForm > strong {
+.commentForm>strong {
     line-height: 1.6;
     color: var(--gray-100);
 }
@@ -107,53 +107,22 @@ text-decoration: none;
 }
 
 .commentForm button[type=submit] {
-padding: 1rem 1.5rem;
-margin-top: 1rem;
-border-radius: 8px;
-border: 0;
-background-color: var(--purple-500);
-color: var(--white);
-font-weight: bold;
-cursor: pointer;
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    border: 0;
+    background-color: var(--purple-500);
+    color: var(--white);
+    font-weight: bold;
+    cursor: pointer;
 
-transition: background-color 0.1s ;
+    transition: background-color 0.1s;
 }
 
 .commentForm button[type=submit]:hover {
     background-color: var(--purple-400);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.commentList {
+    margin-top: 2rem;
+}
