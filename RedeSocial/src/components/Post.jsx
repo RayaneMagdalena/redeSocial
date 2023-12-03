@@ -16,14 +16,11 @@ export function Post({ author, publishedAt, content }) {
   ])
   const [newCommentText, setNewCommentText] = useState('')
 
-
-
-
   // Formatação da data
   const publishedDateFormatted = format(publishedAt, "d 'de' LLL 'às' HH:mm'h'", {
     locale: ptBR,
   });
- // Postado há 3 meses...
+
   const publishedDateRelativeToNow = formatDistanceToNow(publishedAt, {
     locale: ptBR,
     addSuffix: true, 
@@ -36,11 +33,19 @@ export function Post({ author, publishedAt, content }) {
   }
 
   function handleNewCommentChange() {
+    event.target.setCustomValidity('');
     setNewCommentText(event.target.value);
   }
+  // Comentário Inválido
+  function handleNewCommentInvalid() {
+    event.target.setCustomValidity('Esse campo é obrigatório');
+  }
   // Deletar comentário
-  function deleteComment (comment) {
-
+  function deleteComment (commentToDelete) {
+    const commentWithouDeleteOne = comments.filter(comment => {
+      return comment !== commentToDelete;
+    })
+    setComments(commentWithouDeleteOne);
   }
 
 
@@ -81,6 +86,8 @@ export function Post({ author, publishedAt, content }) {
         placeholder="Deixe um comentário"
         value={newCommentText}
         onChange={handleNewCommentChange}
+        onInvalid={handleNewCommentInvalid}
+        required
         />
 
         <footer>
