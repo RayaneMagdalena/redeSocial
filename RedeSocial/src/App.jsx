@@ -10,28 +10,29 @@ const posts = [
   {
     id:1,
     author: {
-      avatarUrl: 'https://github.com/RayaneMagdalena.png',
-      name: 'Rayane Magdalena',
+      // avatarUrl: 'https://github.com/RayaneMagdalena.png',
+      avatarUrl: 'https://github.com/MaiAlbuquerque.png',
+      name: 'Maíra Albuquerque',
       role: 'Web Developer'
     },
     content: [
       { type: 'paragraph', content: 'Fala Galera!!'},
-      { type: 'paragraph', content: 'e agora o que vamos fazer?'},
-      { type: 'link', content: 'umdoistres.vem/design'}
+      { type: 'paragraph', content: 'Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀'},
+      { type: 'link', content: ' Mai.developer/doctorcare'}
     ],
     publishedAt: new Date('2023-12-02 14:00:00'),
   },
   {
     id:2,
     author: {
-      avatarUrl: 'https://github.com/mykebrito.png',
+      avatarUrl: 'https://github.com/cmoraes5.png',
       name: 'Caio Moraes',
       role: 'Web Developer'
     },
     content: [
       { type: 'paragraph', content: 'E ai pessoal!'},
-      { type: 'paragraph', content: 'me diga então você'},
-      { type: 'link', content: 'umdoistres.vem/design'}
+      { type: 'paragraph', content: 'Finalmente finalizei meu novo site/portfólio. Foi um baita desafio criar todo o design e codar na unha, mas consegui 💪🏻 '},
+      { type: 'link', content: ' devoncaio.design'}
     ],
     publishedAt: new Date('2023-12-01 22:00:00'),
   },
